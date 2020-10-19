@@ -51,10 +51,10 @@ const hitEnemy = function(enemy) {
   hit.boss = false
   hit.level = enemy.level
   hit.alive = true
-  hit.hitPoints = enemy.hitPoints - 10
+  hit.hitPoints = enemy.hitPoints - 10 
   
-  if (hit.alive <= 0) {
-    enemy.alive = false
+  if (hit.hitPoints - 10 <= 0) {
+    hit.alive = false
   }
   return hit
 }
@@ -70,7 +70,6 @@ const beastMode = function(newObj) {
   
   return buffed
 }
-
 
 
 // Our code here. Don't touch!
