@@ -53,7 +53,7 @@ const hitEnemy = function(enemy) {
   hit.alive = true
   hit.hitPoints = enemy.hitPoints - 10 
   
-  if (hit.hitPoints - 10 <= 0) {
+  if (hit.hitPoints <= 0) {
     hit.alive = false
   }
   return hit
